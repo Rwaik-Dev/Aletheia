@@ -38,7 +38,7 @@ Referência completa para integradores: [[Projetos/apex/API - Visao Geral|API �
 
 ## Integrações ingeridas
 
-Enum Prisma: **`TASY`** e **`MV`** apenas. Clientes externos devem usar um desses valores em `POST /api/v1/errors/ingest`.
+Enum Prisma: **`TASY`**, **`MV`** e **`HP`**. Clientes externos usam um desses valores em `POST /api/v1/errors/ingest`.
 
 ## Relacionados
 

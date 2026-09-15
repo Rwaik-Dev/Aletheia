@@ -4,7 +4,7 @@
 
 - Endpoint: `POST /api/v1/errors/ingest`
 - Auth: `Authorization: Bearer <access_token>` (service client ou usuário)
-- Integrações: `TASY` | `MV`
+- Integrações: `TASY` | `MV` | `HP`
 - Até **500** erros por requisição
 - `resolveAbsent` (default `true`): erros ativos ausentes no payload são marcados **RESOLVED**
 - Cada `source` deve enviar o **snapshot completo** dos erros ativos daquela integração
@@ -28,10 +28,11 @@ Comportamento:
 - Persistente: re-notifica a cada `TASY_REMINDER_INTERVAL_HOURS` (padrão 2h); job roda a cada **15 min**
 - Resolvido: para de notificar
 
-## Notificação Google Chat (MV)
+## Notificação Google Chat (MV e HP)
 
 - Notifica **uma vez** por erro (novo)
 - Reativação ou persistência: **não** re-notifica
+- HP usa webhook `GOOGLE_CHAT_WEBHOOK_HP`
 
 ## Monitoramento de filas (NTFY)
 

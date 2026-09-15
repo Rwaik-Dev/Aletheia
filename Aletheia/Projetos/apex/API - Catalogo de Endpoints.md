@@ -82,7 +82,7 @@ Ingestão em lote (snapshot por `integration` + `source`).
 
 | Campo | Obrigatório | Regras |
 |-------|-------------|--------|
-| `integration` | sim | `TASY` \| `MV` |
+| `integration` | sim | `TASY` \| `MV` \| `HP` |
 | `source` | sim | string, máx. 255 |
 | `errors` | sim | array, máx. **500** itens |
 | `resolveAbsent` | não | boolean, default **true** |
@@ -128,7 +128,7 @@ Lista paginada por cursor.
 
 | Param | Tipo | Descrição |
 |-------|------|-----------|
-| `integration` | `TASY` \| `MV` | filtro |
+| `integration` | `TASY` \| `MV` \| `HP` | filtro |
 | `status` | `ACTIVE` \| `RESOLVED` | filtro |
 | `source` | string | filtro, máx. 255 |
 | `limit` | int | default **50**, máx. **100** |

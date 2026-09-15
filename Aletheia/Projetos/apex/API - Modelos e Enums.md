@@ -10,8 +10,7 @@ Valores aceitos na ingestão:
 
 - `TASY`
 - `MV`
-
-> Outros valores (ex.: `HP`) retornam **400** na validação.
+- `HP` (notificação igual MV: uma vez por erro; webhook `GOOGLE_CHAT_WEBHOOK_HP`)
 
 ### ErrorStatus
 
