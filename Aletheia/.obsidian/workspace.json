@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/apex/Historico de Desenvolvimento.md",
+                "file": "Projetos/apex/API - Visao Geral.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Historico de Desenvolvimento"
+              "title": "API - Visao Geral"
             }
           }
         ]
@@ -198,10 +198,13 @@
   },
   "active": "5df72b511061edca",
   "lastOpenFiles": [
+    "Projetos/apex/API - Catalogo de Endpoints.md",
+    "Projetos/apex/Historico de Desenvolvimento.md",
+    "Projetos/apex/API - Autenticacao.md",
+    "Projetos/apex/API - Visao Geral.md",
     "Projetos/apex/Visao Geral.md",
     "Projetos/apex/Regras de Negocio.md",
     "Projetos/apex/Runbook.md",
-    "Projetos/apex/Historico de Desenvolvimento.md",
     "Projetos/monitor-hp/Visao Geral.md",
     "Projetos/apex",
     "Projetos/monitor-hp/Runbook.md",
