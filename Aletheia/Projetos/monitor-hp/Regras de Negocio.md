@@ -23,7 +23,7 @@ A primeira ocorrencia e enviada imediatamente e tambem registrada no estado loca
 
 Endpoint: `POST {APEX_URL}/api/v1/errors/ingest`
 
-Header: `Authorization: Bearer <access_token>`
+Header: `Authorization: Bearer <accessToken>` obtido via `POST /api/v1/auth/token` (service client)
 
 Payload raiz:
 

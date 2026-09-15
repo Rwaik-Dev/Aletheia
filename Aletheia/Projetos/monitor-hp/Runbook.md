@@ -14,7 +14,7 @@ Preencher:
 - Pasta analisados
 - Pasta relatorios
 - URL base Apex
-- Access Token
+- Client ID e Client Secret (service client Apex)
 - Source `10.2.30.53`
 - Integration `HP`
 
