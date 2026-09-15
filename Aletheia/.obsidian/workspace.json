@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+                "file": "Projetos/xml-reader/xml-reader - Setup e operação.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ADR-001 Separacao do painel CMS em site-lsp-admin"
+              "title": "xml-reader - Setup e operação"
             }
           }
         ]
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+                "file": "Projetos/xml-reader/xml-reader - Setup e operação.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+                "file": "Projetos/xml-reader/xml-reader - Setup e operação.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+                "file": "Projetos/xml-reader/xml-reader - Setup e operação.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -199,10 +199,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8911aacaaf91eeda",
+  "active": "d3af9c923697d03d",
   "lastOpenFiles": [
-    "Sem título.base",
+    "Projetos/xml-reader/xml-reader - Fluxo de negócio.md",
+    "Projetos/xml-reader/xml-reader - Documentação técnica.md",
+    "Projetos/xml-reader/xml-reader.md",
+    "Projetos/xml-reader/xml-reader - Setup e operação.md",
     "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+    "Sem título.base",
+    "Projetos/xml-reader",
     "Aletheia/Sem título.base"
   ]
 }
