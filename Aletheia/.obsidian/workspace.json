@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "469f3f4a81d147bb",
+        "id": "8303ecdcd731cc64",
         "type": "tabs",
         "children": [
           {
-            "id": "5df72b511061edca",
+            "id": "6ea6b524f84d761e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Projetos/apex/API - Catalogo de Endpoints.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Aletheia/Projetos/monitor-hp/Runbook.md",
+                "bFile": "Aletheia/Projetos/monitor-hp/Runbook.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "API - Catalogo de Endpoints"
+              "icon": "diff",
+              "title": "Diff: Runbook  (Working Tree)"
             }
           }
         ]
@@ -196,13 +196,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5df72b511061edca",
+  "active": "6ea6b524f84d761e",
   "lastOpenFiles": [
-    "Projetos/apex/API - Visao Geral.md",
     "Projetos/apex/API - Guia Novos Clients.md",
+    "Projetos/apex/API - Visao Geral.md",
+    "Projetos/apex/API - Catalogo de Endpoints.md",
     "Projetos/apex/API - Erros HTTP e limites.md",
     "Projetos/apex/API - Modelos e Enums.md",
-    "Projetos/apex/API - Catalogo de Endpoints.md",
     "Projetos/apex/Historico de Desenvolvimento.md",
     "Projetos/apex/API - Autenticacao.md",
     "Projetos/apex/Visao Geral.md",
