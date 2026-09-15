@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/apex/Regras de Negocio.md",
+                "file": "Projetos/apex/Historico de Desenvolvimento.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regras de Negocio"
+              "title": "Historico de Desenvolvimento"
             }
           }
         ]
@@ -198,10 +198,10 @@
   },
   "active": "5df72b511061edca",
   "lastOpenFiles": [
-    "Projetos/apex/Runbook.md",
-    "Projetos/apex/Regras de Negocio.md",
-    "Projetos/apex/Historico de Desenvolvimento.md",
     "Projetos/apex/Visao Geral.md",
+    "Projetos/apex/Regras de Negocio.md",
+    "Projetos/apex/Runbook.md",
+    "Projetos/apex/Historico de Desenvolvimento.md",
     "Projetos/monitor-hp/Visao Geral.md",
     "Projetos/apex",
     "Projetos/monitor-hp/Runbook.md",
