@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8303ecdcd731cc64",
+        "id": "4c8a900f04e56c5c",
         "type": "tabs",
         "children": [
           {
-            "id": "6ea6b524f84d761e",
+            "id": "7305429b8d10f234",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": "Aletheia/Projetos/monitor-hp/Runbook.md",
-                "bFile": "Aletheia/Projetos/monitor-hp/Runbook.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: Runbook  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
             }
           }
         ]
@@ -196,7 +192,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6ea6b524f84d761e",
+  "active": "7305429b8d10f234",
   "lastOpenFiles": [
     "Projetos/apex/API - Guia Novos Clients.md",
     "Projetos/apex/API - Visao Geral.md",
