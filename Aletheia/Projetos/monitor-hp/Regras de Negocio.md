@@ -15,7 +15,7 @@ Campos extraidos:
 
 ## Recorrencia 24h
 
-A consulta das ultimas 24 horas e local. A chave e formada por `exm_pardini + cod_formato_errado`.
+A consulta das ultimas 24 horas e local. A chave local e o fingerprint Apex incluem `pedido + exm_pardini + cod_formato_errado`, para nao colapsar pedidos diferentes do mesmo exame.
 
 A primeira ocorrencia e enviada imediatamente e tambem registrada no estado local. Novas ocorrencias da mesma chave dentro da janela atualizam `ultima_ocorrencia`, reabrem exportacao e entram no historico `ocorrencias`.
 
