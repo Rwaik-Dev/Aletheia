@@ -4,7 +4,11 @@ Backend NestJS para receber, persistir e notificar erros das integrações **Tas
 
 Repositório: `C:\Estudos\apex`
 
-Documentação no repo: `README.md` (referência principal) e `docs/frontend-integration.md` (frontend).
+Documentação no repo: `README.md` e `docs/frontend-integration.md` (frontend).
+
+## API (Obsidian)
+
+Referência completa para integradores: [[Projetos/apex/API - Visao Geral|API — Visão geral]].
 
 ## Responsabilidades
 
