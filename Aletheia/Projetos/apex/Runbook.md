@@ -13,14 +13,15 @@ npm run prisma:seed
 npm run start:dev
 ```
 
-- API: `http://localhost:3000`
+- API (Nest): `http://localhost:3333` (`PORT` no `.env`)
+- Frontend (Next): `http://localhost:3000` — incluir em `CORS_ORIGINS`
 - Postgres no host: porta **5433** (`DATABASE_URL` em `.env.example`)
 - Health: `GET /health`, readiness: `GET /health/ready`
 
 ### Token para scripts
 
 ```powershell
-curl -X POST http://localhost:3000/api/v1/auth/token `
+curl -X POST http://localhost:3333/api/v1/auth/token `
   -H "Content-Type: application/json" `
   -d '{"clientId":"apex-ingest-client","clientSecret":"<secret-do-seed>"}'
 ```

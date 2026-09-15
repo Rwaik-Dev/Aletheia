@@ -17,7 +17,7 @@ Cliente Python para Windows que monitora HTMLs do Hermes Pardini, extrai erros i
 - Pasta de erros: `C:\Estudos\monitor-hp\erros`
 - Pasta de analisados: `C:\Estudos\monitor-hp\analisados`
 - Relatorios: `C:\Estudos\monitor-hp\relatorios`
-- Apex URL: `http://localhost:3000`
+- Apex URL (API): `http://localhost:3333`
 - Integration: `HP`
 - Source: `10.2.30.53`
 - Janela local: 1440 minutos
