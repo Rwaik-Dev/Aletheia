@@ -11,10 +11,14 @@
             "id": "5df72b511061edca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Projetos/apex/Runbook.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Runbook"
             }
           }
         ]
@@ -194,6 +198,15 @@
   },
   "active": "5df72b511061edca",
   "lastOpenFiles": [
+    "Projetos/apex/Visao Geral.md",
+    "Projetos/apex/Runbook.md",
+    "Projetos/apex/Regras de Negocio.md",
+    "Projetos/apex/Historico de Desenvolvimento.md",
+    "Projetos/monitor-hp/Visao Geral.md",
+    "Projetos/apex",
+    "Projetos/monitor-hp/Runbook.md",
+    "Projetos/monitor-hp/Regras de Negocio.md",
+    "Projetos/monitor-hp/Historico de Desenvolvimento.md",
     "Projetos/xml-reader/xml-reader - Setup e operação.md",
     "Projetos/xml-reader/xml-reader - Fluxo de negócio.md",
     "Projetos/xml-reader/xml-reader - Documentação técnica.md",
