@@ -1,5 +1,11 @@
 # Historico de Desenvolvimento - Monitor HP
 
+## 2026-09-16
+
+- Alinhamento com Apex: para `HP_CONN_001`, o hub resolve `exm_pardini` no RP e monta mensagem Google Chat com códigos/nomes dos exames internos (pode listar mais de um).
+- Documentado contrato de `metadata` no ingest (pedido, chave_local, exm_pardini, arquivo_origem, cod_formato_*).
+- Referência: [[Projetos/apex/Regras de Negocio|Regras de Negocio — Apex]].
+
 ## 2026-09-15
 
 - Usada a estrutura do `monitor-integracao` como base operacional.

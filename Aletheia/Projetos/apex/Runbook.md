@@ -2,15 +2,18 @@
 
 ## Desenvolvimento local
 
+Gerenciador de pacotes: **pnpm** (`pnpm-lock.yaml`, `packageManager` no `package.json`). Não usar `npm install`.
+
 ```powershell
 cd C:\Estudos\apex
 cp .env.example .env
 # Ajuste JWT_SECRET (32+ chars), MSSQL_* e NTFY_URL
+corepack enable
 docker compose up -d
-npm install
-npx prisma migrate dev
-npm run prisma:seed
-npm run start:dev
+pnpm install
+pnpm prisma:migrate
+pnpm prisma:seed
+pnpm start:dev
 ```
 
 - API (Nest): `http://localhost:3333` (`PORT` no `.env`)
@@ -31,18 +34,53 @@ Credenciais admin: variáveis `BOOTSTRAP_ADMIN_*` no seed.
 ## Testes
 
 ```powershell
-npm test
-npm run test:e2e
+pnpm test
+pnpm test:e2e
 ```
+
+## Git e branches
+
+Branch única de trabalho: **`main`**. Feature branches antigas foram apagadas após merge dos PRs #5 e #6.
+
+### Atualizar clone local (dev ou outra máquina)
+
+```powershell
+cd C:\Estudos\apex
+git fetch --prune
+git checkout main
+git pull origin main
+# Remover branches locais órfãs, se ainda existirem:
+git branch -d feat/jwt-auth-and-admin-api 2>$null
+git branch -d master 2>$null
+git remote prune origin
+```
+
+Conferir: `git branch -a` deve listar apenas `main` e `remotes/origin/main`.
+
+### Servidor de produção
+
+Após merge em `main`, no host de deploy:
+
+```bash
+cd /caminho/do/apex   # ajustar
+git fetch --prune
+git checkout main
+git pull origin main
+pnpm docker:prod:build
+pnpm docker:prod:up
+pnpm deploy:health
+```
+
+Não usar mais branches `feat/*` ou `master` neste repositório.
 
 ## Produção (10.2.30.102)
 
 ```bash
 cp .env.production.example .env.production
 # DATABASE_URL com IP 10.2.30.102:5432 (não localhost dentro do container)
-npm run docker:prod:build
-npm run docker:prod:up
-npm run deploy:health
+pnpm docker:prod:build
+pnpm docker:prod:up
+pnpm deploy:health
 ```
 
 - Porta exposta: **3333**
@@ -67,9 +105,12 @@ npm run deploy:health
 - 429: rate limit 100 req/min
 - Filas sempre vazias/erro: conectividade MSSQL a partir do host/container
 - Sem Google Chat: webhooks vazios ou `errorCode` Tasy fora de `mapeamento` / `tabela de preço`
+- HP sem detalhe de exame RP: conferir `MSSQL_*` e se `metadata.exm_pardini` veio no ingest; mensagem ainda sai com aviso se lookup falhar
 
 ## Google Chat
 
-Incoming webhooks nos espaços desejados → `GOOGLE_CHAT_WEBHOOK_TASY`, `GOOGLE_CHAT_WEBHOOK_TASY_TABELA_PRECO`, `GOOGLE_CHAT_WEBHOOK_MV`.
+Incoming webhooks nos espaços desejados → `GOOGLE_CHAT_WEBHOOK_TASY`, `GOOGLE_CHAT_WEBHOOK_TASY_TABELA_PRECO`, `GOOGLE_CHAT_WEBHOOK_MV`, `GOOGLE_CHAT_WEBHOOK_HP`.
+
+Erro HP `HP_CONN_001`: mensagem de importação com exames resolvidos no RP — ver [[Projetos/apex/Regras de Negocio#HP_CONN_001 — divergência de layout (Hermes Pardini)|regras HP_CONN_001]].
 
 Docs: https://developers.google.com/workspace/chat/quickstart/webhooks

@@ -37,3 +37,21 @@ Payload raiz:
 ```
 
 Cada erro usa `message = Resultado de exame não importado` e `errorCode = HP_CONN_001`.
+
+### Metadata enviado ao Apex
+
+Objeto `metadata` por erro (JSON livre no ingest, máx. 4 KB):
+
+```json
+{
+  "pedido": "B0P6SPR",
+  "chave_local": "d0c350c13bd256b5116111567486325f",
+  "exm_pardini": "A-HIP",
+  "arquivo_origem": "LOG_HPARDINI_17082026002134.HTML",
+  "cod_formato_certo": "25117",
+  "cod_formato_errado": "8317"
+}
+```
+
+- `exm_pardini` **não** é o código interno do RP; o Apex resolve os exames reais consultando MSSQL antes do Google Chat.
+- Ver tratamento no Apex: [[Projetos/apex/Regras de Negocio#HP_CONN_001 — divergência de layout (Hermes Pardini)|HP_CONN_001 no Apex]].

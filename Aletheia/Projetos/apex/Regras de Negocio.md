@@ -33,6 +33,52 @@ Comportamento:
 - Notifica **uma vez** por erro (novo)
 - Reativação ou persistência: **não** re-notifica
 - HP usa webhook `GOOGLE_CHAT_WEBHOOK_HP`
+- Mensagem genérica (paciente, exame, arquivo, datas) para códigos HP **diferentes** de `HP_CONN_001`
+
+### HP_CONN_001 — divergência de layout (Hermes Pardini)
+
+Quando `integration = HP` e `errorCode = HP_CONN_001`, o Apex **consulta o RP (MSSQL)** antes de montar o Google Chat, usando o mnemônico Pardini enviado no metadata (`exm_pardini`).
+
+**Metadata esperado no ingest** (enviado pelo Monitor HP):
+
+| Campo | Uso |
+|-------|-----|
+| `pedido` | Identificador do pedido HP |
+| `chave_local` | Fingerprint local do Monitor (dedup 24h no cliente) |
+| `exm_pardini` | Mnemônico do exame no HP (ex.: `A-HIP`) — **chave da consulta RP** |
+| `arquivo_origem` | Nome/caminho do arquivo HTML de log |
+| `cod_formato_certo` | Layout esperado no cadastro médico |
+| `cod_formato_errado` | Layout encontrado no arquivo |
+
+**Query RP** (`MssqlService.consultaExamesHpardiniPorMnemonico`):
+
+```sql
+SELECT RTRIM(smk_cod) AS cod_exame, RTRIM(smk_nome) AS nome_exame
+FROM exm_hpardini, ams, smk
+WHERE num_exm = ams_hpardini_num_exm
+  AND ams_smk_cod = smk_cod
+  AND smk_status = 'A'
+  AND mn_exa = @mn_exa
+```
+
+- Pode retornar **várias linhas** (um mnemônico Pardini amarrado a mais de um exame no RP).
+- Na mensagem, cada linha vira: `• Mnemônico: {cod_exame} — {nome_exame}`.
+
+**Fallback (sempre envia notificação):**
+
+- RP indisponível ou erro na query → aviso no bloco de detalhes + `Mnemônico HP: {exm_pardini}`.
+- Nenhum exame encontrado → aviso explícito + mnemônico HP.
+
+**Modelo da mensagem Google Chat** (título `🚨 NOVO ERRO DE IMPORTAÇÃO IDENTIFICADO`):
+
+- Tipo `HP_CONN_001`
+- Texto fixo do problema (layout informado ≠ layout cadastrado)
+- Detalhes do exame (lista de mnemônicos RP ou fallback)
+- Códigos de formato: Esperado / Encontrado
+- Arquivo e data (`lastSeenAt`, fuso `America/Sao_Paulo`)
+- Observação sobre múltiplos exames associados ao mesmo código HP
+
+**Código:** `NotificationService.enrichMetadata` → `GoogleChatService.buildHpConn001Message`; `NotificationsModule` importa `MssqlModule`.
 
 ## Monitoramento de filas (NTFY)
 

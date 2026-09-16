@@ -1,6 +1,6 @@
 # Apex
 
-Backend NestJS para receber, persistir e notificar erros das integrações **Tasy** e **MV**, além de consultar filas e exames no SQL Server (portado do signum-backend).
+Backend NestJS para receber, persistir e notificar erros das integrações **Tasy**, **MV** e **HP** (Hermes Pardini / Monitor HP), além de consultar filas e exames no SQL Server (portado do signum-backend).
 
 Repositório: `C:\Estudos\apex`
 
@@ -14,7 +14,7 @@ Referência completa para integradores: [[Projetos/apex/API - Visao Geral|API �
 
 | Área | Função |
 |------|--------|
-| Erros Tasy/MV | Ingestão REST, deduplicação por fingerprint, resolução por snapshot, Google Chat |
+| Erros Tasy/MV/HP | Ingestão REST, deduplicação por fingerprint, resolução por snapshot, Google Chat; HP `HP_CONN_001` enriquece mensagem com lookup RP por `exm_pardini` |
 | Signum | Filas Tasy/Checkup/Interface e consulta de exame (`smk_cod`) via MSSQL |
 | Alertas | Cron NTFY quando fila > 40 itens (a cada 5 min) |
 | Auth | JWT para scripts (service clients) e usuários humanos (ADMIN/USER) |
@@ -31,7 +31,7 @@ Referência completa para integradores: [[Projetos/apex/API - Visao Geral|API �
 - `auth/` — token, login, refresh, logout
 - `admin/` — usuários, service clients, sessões
 - `errors/` — ingest e listagem
-- `notifications/` — Google Chat, NTFY, políticas Tasy/MV
+- `notifications/` — Google Chat, NTFY, políticas Tasy/MV/HP (mensagem dedicada `HP_CONN_001`)
 - `signum/` — filas e consulta exame
 - `scheduler/` — lembretes Tasy e monitor de filas
 - `health/` — `/health` e `/health/ready`
