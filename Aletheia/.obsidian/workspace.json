@@ -11,10 +11,14 @@
             "id": "7305429b8d10f234",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Projetos/monitor-hp/Historico de Desenvolvimento.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Historico de Desenvolvimento"
             }
           }
         ]
@@ -192,23 +196,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7305429b8d10f234",
+  "active": "8911aacaaf91eeda",
   "lastOpenFiles": [
-    "Projetos/apex/API - Guia Novos Clients.md",
+    "Projetos/apex/Regras de Negocio.md",
+    "Projetos/monitor-hp/Historico de Desenvolvimento.md",
+    "Projetos/apex/API - Autenticacao.md",
     "Projetos/apex/API - Visao Geral.md",
+    "Projetos/apex/Historico de Desenvolvimento.md",
+    "Projetos/apex/API - Modelos e Enums.md",
+    "Projetos/apex/Visao Geral.md",
+    "Projetos/apex/Runbook.md",
+    "Projetos/apex/API - Guia Novos Clients.md",
     "Projetos/apex/API - Catalogo de Endpoints.md",
     "Projetos/apex/API - Erros HTTP e limites.md",
-    "Projetos/apex/API - Modelos e Enums.md",
-    "Projetos/apex/Historico de Desenvolvimento.md",
-    "Projetos/apex/API - Autenticacao.md",
-    "Projetos/apex/Visao Geral.md",
-    "Projetos/apex/Regras de Negocio.md",
-    "Projetos/apex/Runbook.md",
     "Projetos/monitor-hp/Visao Geral.md",
     "Projetos/apex",
     "Projetos/monitor-hp/Runbook.md",
     "Projetos/monitor-hp/Regras de Negocio.md",
-    "Projetos/monitor-hp/Historico de Desenvolvimento.md",
     "Projetos/xml-reader/xml-reader - Setup e operação.md",
     "Projetos/xml-reader/xml-reader - Fluxo de negócio.md",
     "Projetos/xml-reader/xml-reader - Documentação técnica.md",
