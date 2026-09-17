@@ -11,14 +11,10 @@
             "id": "7305429b8d10f234",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projetos/monitor-socor/monitor-socor - Setup e operação.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "monitor-socor - Setup e operação"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ]
