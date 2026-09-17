@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/apex/Regras de Negocio.md",
+                "file": "Projetos/monitor-socor/monitor-socor - Setup e operação.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regras de Negocio"
+              "title": "monitor-socor - Setup e operação"
             }
           }
         ]
@@ -200,10 +200,10 @@
   "lastOpenFiles": [
     "Projetos/monitor-socor/Historico de Desenvolvimento.md",
     "Projetos/monitor-socor/monitor-socor - Setup e operação.md",
+    "Projetos/apex/Regras de Negocio.md",
     "Projetos/monitor-socor",
     "Projetos/monitor-hp/Regras de Negocio.md",
     "Projetos/monitor-hp/Historico de Desenvolvimento.md",
-    "Projetos/apex/Regras de Negocio.md",
     "Projetos/apex/API - Autenticacao.md",
     "Projetos/apex/API - Visao Geral.md",
     "Projetos/apex/Historico de Desenvolvimento.md",
