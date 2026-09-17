@@ -7,7 +7,7 @@
 - UI Tkinter (`app.py`): Configuração, Execução (serviço Windows com auto-start), Logs.
 - Serviço **MonitorSocor** via `monitor_service.py` + pywin32.
 - Núcleo em `monitor_core.py`; pacote `monitor/` mantém parser/classifier MV.
-- Auth Apex: `X-API-Key` no ingest (sem OAuth).
+- Auth Apex: service client JWT + Bearer no ingest (alinhado ao catálogo Apex).
 - PyInstaller: `MonitorSocorConfig.exe`, `MonitorSocorService.exe`.
 - Migração `.env` → SQLite (inclui `INTERVALO_SEGUNDOS`).
 

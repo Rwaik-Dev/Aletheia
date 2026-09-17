@@ -1,6 +1,6 @@
 # monitor-socor — Setup e operação
 
-Cliente **MV (SOCOR)** que lê `*_alerta.txt`, classifica erros e envia snapshot ao **Apex** (`integration: MV`, auth `X-API-Key`).
+Cliente **MV (SOCOR)** que lê `*_alerta.txt`, classifica erros e envia snapshot ao **Apex** (`integration: MV`). Auth: **service client** → `POST /api/v1/auth/token`, ingest com `Authorization: Bearer` e `resolveAbsent: true` ([[Projetos/apex/API - Guia Novos Clients|Guia Apex]]).
 
 ## Pré-requisitos
 
@@ -8,7 +8,7 @@ Cliente **MV (SOCOR)** que lê `*_alerta.txt`, classifica erros e envia snapshot
 |-----------|--------|
 | SO | Windows Server (serviço + DPAPI) |
 | Python | 3.10+ (dev) |
-| Apex | URL base + API Key |
+| Apex | URL base (`:3333`) + service client (`clientId`/`clientSecret`) |
 | Pasta | Caminho dos alertas MV (`PASTA_ERROS`) |
 
 ## Dados locais
