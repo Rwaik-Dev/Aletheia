@@ -2,7 +2,10 @@
 
 Guia transversal para aplicativos **Tkinter** de configuração e controle de **monitores de integração** (MV/SOCOR, HP, Tasy, etc.) que enviam erros ao [[Projetos/apex/Visao Geral|Apex]].
 
-**Referência implementada:** repositório `monitor-socor` (`C:\Estudos\monitor-socor`) — pacote `ui/`, `app.py` como controller.
+**Referências implementadas:**
+
+- `monitor-socor` (`C:\Estudos\monitor-socor`) — primeira adoção do pacote `ui/`
+- `monitor-integracao` / Tasy (`C:\Estudos\monitor-integracao`) — mesmo padrão; `app.py` como controller
 
 ## Escopo
 
@@ -137,14 +140,14 @@ Service spec: entrada `monitor_service.py`, `console=True` (debug/install via py
 
 ## O que customizar por client
 
-| Item | Exemplo SOCOR | Exemplo HP | Exemplo Tasy (futuro) |
-|------|-----------------|------------|------------------------|
-| `APP_TITLE` | Monitor SOCOR | Monitor HP | Monitor Tasy |
+| Item | Exemplo SOCOR | Exemplo HP | Exemplo Tasy |
+|------|-----------------|------------|--------------|
+| `APP_TITLE` | Monitor SOCOR | Monitor HP | Monitor Integração Tasy |
 | `APP_SUBTITLE` | Integração MV → Apex | Integração HP → Apex | Integração Tasy → Apex |
-| Ícone / cores accent | Teal MV | (definir) | (definir) |
-| Nome SCM / pasta ProgramData | `MonitorSocor` | `MonitorHP` | `MonitorTasy` |
-| Campos da aba Config | pastas MV, intervalos | pastas HP, retenção 24h | conforme negócio |
-| `monitor/` + `monitor_core.py` | parser `*_alerta.txt` | HTML HP | (a definir) |
+| Ícone / cores accent | Teal MV | (definir) | Teal + badge Tasy |
+| Nome SCM / pasta ProgramData | `MonitorSocor` | `MonitorHP` | `MonitorIntegracao` |
+| Campos da aba Config | pastas MV, intervalos | pastas HP, retenção 24h | pastas HTML/Excel, Apex, retenção Excel, timezone |
+| Parser / core | `monitor/` + `*_alerta.txt` | HTML HP | `monitor_core.py` (HTML Tasy) |
 
 **Igual entre clients:** shell, abas, tema, banners, card de serviço, padrão SQLite+DPAPI, teste Apex service client, Ruff, estrutura de testes.
 
@@ -164,12 +167,14 @@ Service spec: entrada `monitor_service.py`, `console=True` (debug/install via py
 
 | Client | UI padrão |
 |--------|-----------|
-| [[Projetos/monitor-socor/Visao Geral|monitor-socor]] | Implementado (referência) |
+| [[Projetos/monitor-socor/Visao Geral|monitor-socor]] | Implementado (referência inicial) |
+| [[Projetos/monitor-tasy/Visao Geral|monitor-integracao (Tasy)]] | **Implementado** (2026-09-18) |
 | [[Projetos/monitor-hp/Visao Geral|monitor-hp]] | Tkinter legado — **pendente** alinhamento |
-| Tasy | A definir |
 
 ## Links
 
-- Implementação: `C:\Estudos\monitor-socor\ui\`
+- UI SOCOR: `C:\Estudos\monitor-socor\ui\`
+- UI Tasy: `C:\Estudos\monitor-integracao\ui\`
+- Visão Tasy: [[Projetos/monitor-tasy/Visao Geral|Monitor Integração Tasy]]
 - Operacional SOCOR: [[Projetos/monitor-socor/monitor-socor - Setup e operação|Setup SOCOR]]
 - Apex ingest: [[Projetos/apex/API - Guia Novos Clients|Guia Novos Clients]]
