@@ -19,7 +19,8 @@ Site institucional do **Lab São Paulo** (laboratório de análises clínicas em
 | Pacote npm | `site-lsp` v0.1.0 |
 | Repositório | `C:\Estudos\site-lsp` |
 | Stack | Next.js 16, React 19, Prisma 7, PostgreSQL 16, Tailwind 4, Auth.js v5 |
-| Doc técnica no repo | `DOCUMENTATION.md` (PDF local: `npm run docs:pdf`) |
+| Doc técnica no repo | `DOCUMENTATION.md` — **fonte versionada no Git** (PDF: `npm run docs:pdf`) |
+| Paridade | Ao mudar o código, atualize este vault **e** `DOCUMENTATION.md` (mapa §22) |
 
 ## Mapa da wiki
 

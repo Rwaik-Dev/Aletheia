@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/site-lsp/Arquitetura.md",
+                "file": "Projetos/site-lsp/Runbook.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arquitetura"
+              "title": "Runbook"
             }
           }
         ]
@@ -198,8 +198,8 @@
   },
   "active": "7305429b8d10f234",
   "lastOpenFiles": [
-    "Projetos/site-lsp/APIs e Integrações.md",
     "Projetos/site-lsp/Arquitetura.md",
+    "Projetos/site-lsp/APIs e Integrações.md",
     "Projetos/site-lsp/Runbook.md",
     "Projetos/site-lsp/Painel Admin.md",
     "Projetos/site-lsp/Modelo de Dados.md",
