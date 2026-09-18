@@ -5,10 +5,10 @@ tags:
   - arquitetura
   - nextjs
 status: aceita
-data-decisao: 2026-08-24
-ultima-revisao: 2026-09-15
+data-decisao: 2026-08-24T00:00:00.000Z
+ultima-revisao: '2026-09-18T00:00:00.000Z'
 projeto: site-lsp
-repositorio: C:/Estudos/site-lsp
+repositorio: 'C:/Estudos/site-lsp'
 ---
 
 # ADR-001 — Separar o painel CMS (`/admin`) em um projeto Next.js independente
@@ -34,7 +34,7 @@ Evoluções recentes no mesmo repo (Auth.js com sessões em banco, MFA TOTP, onb
    - Admin: **somente rede interna** (sem binding público; acesso via VPN / proxy corporativo).
 5. **Banco e arquivos compartilhados**:
    - Mesmo PostgreSQL (`DATABASE_URL`).
-   - Mesmos volumes Docker para uploads (`public/banners`, `units`, `vacinas`, `convenios`).
+   - Mesmos volumes Docker para uploads (`public/banners`, `units`, `vacinas`, `convenios`) — **já** mapeados no compose atual do monólito.
 6. **Invalidação de cache cross-app**: após edições no admin, chamar `POST /api/revalidate` no site (Bearer `REVALIDATE_SECRET`) em vez de `revalidatePublicHomeContent()` in-process.
 7. **Migrações e seed**: executados **somente** no pipeline/container do `site-lsp-admin`; o site roda `prisma generate` no build e **não** aplica `migrate deploy` no startup.
 
@@ -93,7 +93,12 @@ flowchart LR
 | `REVALIDATE_SECRET` | Site + Admin | Bearer token do endpoint de revalidação |
 | `DATABASE_URL` | Ambos | Mesmo cluster PostgreSQL |
 
-## Estado da implementação (2026-09-15)
+## Wiki do projeto
+
+- Hub: [[Visão Geral]]
+- Arquitetura atual (monólito): [[Arquitetura]] · [[Painel Admin]]
+
+## Estado da implementação (2026-09-18)
 
 | Item | Status |
 | --- | --- |

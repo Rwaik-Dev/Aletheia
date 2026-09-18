@@ -70,6 +70,7 @@ Portanto, o banner genérico “este site usa cookies” **não é o instrumento
 
 ## Relacionado
 
+- [[Visão Geral]] · [[Site Público]] · [[APIs e Integrações]] · [[Autenticação e Segurança#Retenção de dados]]
 - Repositório: `C:\Estudos\site-lsp`
 - Documentação técnica: `DOCUMENTATION.md` (analytics, cookies admin, retenção)
 - [[ADR-001 Separacao do painel CMS em site-lsp-admin]]
