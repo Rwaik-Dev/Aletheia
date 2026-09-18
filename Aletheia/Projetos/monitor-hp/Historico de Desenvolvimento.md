@@ -1,5 +1,13 @@
 # Historico de Desenvolvimento - Monitor HP
 
+## 2026-09-18
+
+- **UI padrão Apex Clients:** pacote `ui/` (Sun Valley / `sv-ttk`), `app.py` como controller, shell header + chip Dev/Prod, abas Config / Execução / Logs.
+- **Serviço:** `resolve_service_executable`, install apontando para `MonitorHPService.exe`, `CREATE_NO_WINDOW` no `sc.exe`.
+- **Build:** `MonitorHPConfig.spec` com `sv-ttk` e ícones; scripts `generate_icon.py` e `sync_ui_utf8.py`.
+- **Limpeza:** removidos `index.py` e código morto em `config` / `service_control`.
+- Referência: [[Projetos/monitores/UI Desktop - Padrão Apex Clients|UI Desktop — padrão Apex Clients]].
+
 ## 2026-09-16
 
 - Alinhamento com Apex: para `HP_CONN_001`, o hub resolve `exm_pardini` no RP e monta mensagem Google Chat com códigos/nomes dos exames internos (pode listar mais de um).

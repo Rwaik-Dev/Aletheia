@@ -5,8 +5,20 @@
 ```powershell
 cd C:\Estudos\monitor-hp
 pip install -r requirements.txt
+python scripts/generate_icon.py
 python app.py
 ```
+
+UI no padrão [[Projetos/monitores/UI Desktop - Padrão Apex Clients|Apex Clients]] (tema **Exibir**, footer copia caminho do `config.db`).
+
+Deploy GUI + serviço (mesma pasta):
+
+```powershell
+pyinstaller MonitorHPConfig.spec
+pyinstaller MonitorHPService.spec
+```
+
+→ `dist\MonitorHPConfig.exe` + `dist\MonitorHPService.exe`
 
 Preencher:
 
