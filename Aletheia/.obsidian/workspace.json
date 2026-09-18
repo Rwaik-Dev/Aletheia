@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
+                "file": "Projetos/site-lsp/Arquitetura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "UI Desktop - Padrão Apex Clients"
+              "title": "Arquitetura"
             }
           }
         ]
@@ -196,22 +196,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8911aacaaf91eeda",
+  "active": "7305429b8d10f234",
   "lastOpenFiles": [
-    "Projetos/site-lsp/Testes.md",
-    "Projetos/site-lsp/Runbook.md",
-    "Projetos/site-lsp/Modelo de Dados.md",
     "Projetos/site-lsp/APIs e Integrações.md",
-    "Projetos/site-lsp/Autenticação e Segurança.md",
-    "Projetos/site-lsp/Painel Admin.md",
-    "Projetos/site-lsp/Site Público.md",
     "Projetos/site-lsp/Arquitetura.md",
+    "Projetos/site-lsp/Runbook.md",
+    "Projetos/site-lsp/Painel Admin.md",
+    "Projetos/site-lsp/Modelo de Dados.md",
+    "Projetos/site-lsp/Testes.md",
+    "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
+    "Projetos/site-lsp/Autenticação e Segurança.md",
+    "Projetos/site-lsp/Site Público.md",
     "Projetos/site-lsp/Visão Geral.md",
     "Projetos/monitor-tasy/Visao Geral.md",
     "Projetos/monitor-tasy",
     "Projetos/apex/Visao Geral.md",
     "Projetos/monitor-socor/Visao Geral.md",
-    "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
     "Projetos/monitor-socor/Historico de Desenvolvimento.md",
     "Projetos/monitor-socor/monitor-socor - Setup e operação.md",
     "Projetos/apex/Regras de Negocio.md",
