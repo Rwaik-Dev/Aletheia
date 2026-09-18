@@ -4,9 +4,7 @@ Cliente Python para Windows que monitora HTMLs do Hermes Pardini, extrai erros i
 
 ## Interface (UI)
 
-Alinhamento visual pendente com o padrão compartilhado: [[Projetos/monitores/UI Desktop - Padrão Apex Clients|UI Desktop — padrão Apex Clients]] (referência implementada em [[Projetos/monitor-socor/Visao Geral|monitor-socor]]).
-
-Hoje: Tkinter/ttk Windows clássico em `app.py` monolítico.
+Alinhado ao [[Projetos/monitores/UI Desktop - Padrão Apex Clients|UI Desktop — padrão Apex Clients]]: pacote `ui/` (Sun Valley / `sv-ttk`), `app.py` como controller, shell header + chip Dev/Prod, abas Config / Execução / Logs.
 
 ## Estrutura
 

@@ -169,7 +169,7 @@ Service spec: entrada `monitor_service.py`, `console=True` (debug/install via py
 |--------|-----------|
 | [[Projetos/monitor-socor/Visao Geral|monitor-socor]] | Implementado (referência inicial) |
 | [[Projetos/monitor-tasy/Visao Geral|monitor-integracao (Tasy)]] | **Implementado** (2026-09-18) |
-| [[Projetos/monitor-hp/Visao Geral|monitor-hp]] | Tkinter legado — **pendente** alinhamento |
+| [[Projetos/monitor-hp/Visao Geral|monitor-hp]] | **Implementado** (2026-09-18) |
 
 ## Links
 
