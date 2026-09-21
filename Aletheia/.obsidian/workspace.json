@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/site-lsp/APIs e Integrações.md",
+                "file": "Projetos/site-lsp/2026-09-16 Politica de Privacidade LGPD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "APIs e Integrações"
+              "title": "2026-09-16 Politica de Privacidade LGPD"
             }
           }
         ]
@@ -198,6 +198,9 @@
   },
   "active": "7305429b8d10f234",
   "lastOpenFiles": [
+    "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
+    "Projetos/site-lsp/2026-09-16 Politica de Privacidade LGPD.md",
+    "Projetos/site-lsp/APIs e Integrações.md",
     "Projetos/site-lsp/Arquitetura.md",
     "Projetos/site-lsp/Autenticação e Segurança.md",
     "Projetos/site-lsp/Modelo de Dados.md",
@@ -207,7 +210,6 @@
     "Projetos/site-lsp/Site Público.md",
     "Projetos/site-lsp/Testes.md",
     "Projetos/site-lsp/Visão Geral.md",
-    "Projetos/site-lsp/APIs e Integrações.md",
     "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
     "Projetos/monitor-tasy/Visao Geral.md",
     "Projetos/monitor-tasy",
@@ -224,8 +226,6 @@
     "Projetos/apex/Historico de Desenvolvimento.md",
     "Projetos/apex/API - Modelos e Enums.md",
     "Projetos/apex/Runbook.md",
-    "Projetos/apex/API - Guia Novos Clients.md",
-    "Projetos/apex/API - Catalogo de Endpoints.md",
     "Projetos/apex",
     "Sem título.base",
     "Projetos/xml-reader",
