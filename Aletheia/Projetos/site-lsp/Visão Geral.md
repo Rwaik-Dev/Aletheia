@@ -46,7 +46,7 @@ Site institucional do **Lab São Paulo** (laboratório de análises clínicas em
 ```mermaid
 flowchart TB
   subgraph publico [Site público]
-    Home[/home]
+    Home[/]
     Priv[/privacidade]
     APIpub[APIs: contact, analytics, health]
   end

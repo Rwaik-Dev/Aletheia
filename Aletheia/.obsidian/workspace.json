@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/site-lsp/Visão Geral.md",
+                "file": "Projetos/site-lsp/APIs e Integrações.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visão Geral"
+              "title": "APIs e Integrações"
             }
           }
         ]
@@ -199,15 +199,16 @@
   "active": "7305429b8d10f234",
   "lastOpenFiles": [
     "Projetos/site-lsp/Arquitetura.md",
-    "Projetos/site-lsp/Runbook.md",
-    "Projetos/site-lsp/APIs e Integrações.md",
-    "Projetos/site-lsp/Painel Admin.md",
-    "Projetos/site-lsp/Modelo de Dados.md",
-    "Projetos/site-lsp/Testes.md",
-    "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
     "Projetos/site-lsp/Autenticação e Segurança.md",
+    "Projetos/site-lsp/Modelo de Dados.md",
+    "Projetos/site-lsp/Modelo de Deploy.md",
+    "Projetos/site-lsp/Painel Admin.md",
+    "Projetos/site-lsp/Runbook.md",
     "Projetos/site-lsp/Site Público.md",
+    "Projetos/site-lsp/Testes.md",
     "Projetos/site-lsp/Visão Geral.md",
+    "Projetos/site-lsp/APIs e Integrações.md",
+    "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
     "Projetos/monitor-tasy/Visao Geral.md",
     "Projetos/monitor-tasy",
     "Projetos/apex/Visao Geral.md",
@@ -225,7 +226,6 @@
     "Projetos/apex/Runbook.md",
     "Projetos/apex/API - Guia Novos Clients.md",
     "Projetos/apex/API - Catalogo de Endpoints.md",
-    "Projetos/apex/API - Erros HTTP e limites.md",
     "Projetos/apex",
     "Sem título.base",
     "Projetos/xml-reader",
