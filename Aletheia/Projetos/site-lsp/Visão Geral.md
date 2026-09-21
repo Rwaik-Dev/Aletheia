@@ -24,19 +24,18 @@ Site institucional do **Lab São Paulo** (laboratório de análises clínicas em
 
 ## Mapa da wiki
 
-| Nota | Conteúdo |
-| --- | --- |
-| [[Arquitetura]] | Camadas, fluxos, cache, CSP, padrão admin |
-| [[Site Público]] | Seções da home, analytics, contato, privacidade |
-| [[Painel Admin]] | Módulos, rotas, uploads, Server Actions |
-| [[Autenticação e Segurança]] | Login, MFA, sessões, rate limit, retenção |
-| [[APIs e Integrações]] | Contact, analytics, health, Auth.js, e-mail |
-| [[Modelo de Dados]] | Schema Prisma, migrações, seed |
-| [[Runbook]] | Setup local/Docker, deploy, troubleshooting |
-| [[Testes]] | Vitest + Playwright |
-| [[Modelo de Deploy]] | Monólito: um repo, um container Next.js, Docker |
-| [[ADR-001 Separacao do painel CMS em site-lsp-admin]] | Histórico — split **não adotado** |
-| [[2026-09-16 Politica de Privacidade LGPD]] | LGPD, `/privacidade`, analytics sem banner de cookies |
+| Nota                                                  | Conteúdo                                              |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| [[Arquitetura]]                                       | Camadas, fluxos, cache, CSP, padrão admin             |
+| [[Site Público]]                                      | Seções da home, analytics, contato, privacidade       |
+| [[Painel Admin]]                                      | Módulos, rotas, uploads, Server Actions               |
+| [[Autenticação e Segurança]]                          | Login, MFA, sessões, rate limit, retenção             |
+| [[APIs e Integrações]]                                | Contact, analytics, health, Auth.js, e-mail           |
+| [[Modelo de Dados]]                                   | Schema Prisma, migrações, seed                        |
+| [[Runbook]]                                           | Setup local/Docker, deploy, troubleshooting           |
+| [[Testes]]                                            | Vitest + Playwright                                   |
+| [[Modelo de Deploy]]                                  | Monólito: um repo, um container Next.js, Docker       |
+| [[2026-09-16 Politica de Privacidade LGPD]]           | LGPD, `/privacidade`, analytics sem banner de cookies |
 
 ## Uma aplicação, duas superfícies
 
