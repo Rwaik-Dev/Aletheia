@@ -4,7 +4,7 @@ tags:
   - admin
   - cms
 projeto: site-lsp
-ultima-revisao: '2026-09-18'
+ultima-revisao: '2026-09-21'
 ---
 
 # Painel admin — site-lsp
@@ -81,6 +81,6 @@ Após mutação de conteúdo público, actions disparam revalidação da home (p
 - Tabelas com ações editar/excluir/reordenar (`displayOrder`).
 - Flag `isActive` para ocultar conteúdo no site sem apagar registro.
 
-## Separação futura
+## Deploy
 
-Todo este diretório `app/admin/` é candidato a migração para **site-lsp-admin** conforme [[ADR-001 Separacao do painel CMS em site-lsp-admin]]. Até lá, o monólito expõe `/admin` na mesma origem do site público — reforçar MFA, senhas fortes e considerar restrição de rede em produção.
+O painel vive em `app/admin/` no **mesmo** repositório e deploy que o site público (`/` e `/admin` no mesmo host). Após alterações de conteúdo, Server Actions invalidam a home in-process. Em produção: MFA, senhas fortes e, se possível, restrição de `/admin` no reverse proxy — ver [[Modelo de Deploy]].

@@ -5,7 +5,7 @@ tags:
   - deploy
   - docker
 projeto: site-lsp
-ultima-revisao: '2026-09-18'
+ultima-revisao: '2026-09-21'
 ---
 
 # Runbook — site-lsp
@@ -60,6 +60,8 @@ Referência: `.env.example` + `app/lib/env.ts`.
 Em **dev**, `AUTH_SECRET`, `ANALYTICS_HASH_SALT` e MFA key têm fallbacks inseguros — nunca usar em produção.
 
 ## Docker Compose
+
+**Deploy monolítico:** um container `nextjs` serve site público, `/admin` e APIs; não há segundo app ou repositório. Ver [[Modelo de Deploy]].
 
 Arquivos: `docker-compose.yml`, `Dockerfile`, `docker/entrypoint.sh`.
 

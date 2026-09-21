@@ -3,7 +3,7 @@ tags:
   - site-lsp
   - arquitetura
 projeto: site-lsp
-ultima-revisao: '2026-09-18'
+ultima-revisao: '2026-09-21'
 ---
 
 # Arquitetura — site-lsp
@@ -97,6 +97,8 @@ Uploads típicos: validação MIME/extensão, `sharp`, limites de tamanho; URLs 
 
 Dois serviços no `docker-compose.yml`: `postgres` (16-alpine) e `nextjs` (porta **3500→3000**). Volumes nomeados para uploads (`banners`, `units`, `vacinas`, `convenios`). Entrypoint: `migrate deploy` + seed opcional. Detalhes em [[Runbook#Docker Compose]].
 
-## Evolução planejada
+## Repositório e deploy
 
-[[ADR-001 Separacao do painel CMS em site-lsp-admin]] — site público chama `POST /api/revalidate` após edições; admin em rede interna; migrações só no app admin. **Pendente.**
+Monólito Next.js neste repositório — site, admin e APIs no mesmo build. Invalidação de cache in-process após CRUD admin. Docker: serviços `postgres` + `nextjs` apenas. Detalhes: [[Modelo de Deploy]].
+
+Histórico de split em outro repo (não adotado): [[ADR-001 Separacao do painel CMS em site-lsp-admin]].

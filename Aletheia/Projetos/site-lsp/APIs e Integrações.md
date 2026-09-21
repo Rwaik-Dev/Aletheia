@@ -3,7 +3,7 @@ tags:
   - site-lsp
   - api
 projeto: site-lsp
-ultima-revisao: '2026-09-18'
+ultima-revisao: '2026-09-21'
 ---
 
 # APIs e integrações — site-lsp
@@ -63,9 +63,9 @@ Templates: reset de senha, verificação de e-mail (`app/lib/mail/templates.ts`)
 | WhatsApp (link) | CTA fixo na home — URL hardcoded no componente |
 | Portal resultados | Link no footer — externo |
 
-## Endpoint futuro (ADR-001)
+## Invalidação de cache (conteúdo público)
 
-`POST /api/revalidate` no site público — Bearer `REVALIDATE_SECRET` — para invalidar cache quando o CMS estiver em outro repositório. **Ainda não implementado.**
+Não há endpoint HTTP dedicado. Mutações admin disparam `revalidatePublicHomeContent()` e `revalidatePath` no **mesmo processo** Next.js (ver [[Arquitetura#Fluxo — conteúdo público]] e [[Modelo de Deploy]]).
 
 ## Observabilidade
 

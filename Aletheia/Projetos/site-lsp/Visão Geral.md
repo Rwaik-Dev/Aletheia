@@ -6,7 +6,7 @@ tags:
   - lab-sao-paulo
 projeto: site-lsp
 repositorio: 'C:/Estudos/site-lsp'
-ultima-revisao: '2026-09-18'
+ultima-revisao: '2026-09-21'
 status: ativo
 ---
 
@@ -34,10 +34,14 @@ Site institucional do **Lab São Paulo** (laboratório de análises clínicas em
 | [[Modelo de Dados]] | Schema Prisma, migrações, seed |
 | [[Runbook]] | Setup local/Docker, deploy, troubleshooting |
 | [[Testes]] | Vitest + Playwright |
-| [[ADR-001 Separacao do painel CMS em site-lsp-admin]] | Decisão futura: extrair CMS |
+| [[Modelo de Deploy]] | Monólito: um repo, um container Next.js, Docker |
+| [[ADR-001 Separacao do painel CMS em site-lsp-admin]] | Histórico — split **não adotado** |
 | [[2026-09-16 Politica de Privacidade LGPD]] | LGPD, `/privacidade`, analytics sem banner de cookies |
 
-## Duas superfícies (estado atual)
+## Uma aplicação, duas superfícies
+
+**Um repositório Git** (`site-lsp`) e **um processo Next.js** servem site público e painel no mesmo host (`/` e `/admin`). Ver [[Modelo de Deploy]].
+
 
 ```mermaid
 flowchart TB
@@ -67,8 +71,6 @@ flowchart TB
 | --- | --- | --- |
 | **Pública** | `/`, `/privacidade` | Leitura de conteúdo, formulário de contato, ingestão de analytics |
 | **Admin** | `/admin/*` | CRUD institucional, usuários, analytics agregado, MFA e auditoria |
-
-> **Roadmap:** [[ADR-001 Separacao do painel CMS em site-lsp-admin]] prevê mover o admin para `site-lsp-admin` e deixar este repo só com o site público. **Ainda não implementado** — o código admin continua em `app/admin/` (~88 arquivos).
 
 ## Problemas que o sistema resolve
 

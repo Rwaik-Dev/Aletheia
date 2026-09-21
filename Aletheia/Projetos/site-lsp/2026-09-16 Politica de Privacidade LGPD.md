@@ -8,6 +8,7 @@ status: implementado
 data: '2026-09-16T00:00:00.000Z'
 projeto: site-lsp
 repositorio: 'C:/Estudos/site-lsp'
+ultima-revisao: '2026-09-21'
 ---
 
 # Política de Privacidade (LGPD) — site público
@@ -66,14 +67,14 @@ Portanto, o banner genérico “este site usa cookies” **não é o instrumento
 - Incluir **CNPJ**, endereço ou **e-mail dedicado** de privacidade/DPO na seção do controlador (hoje orienta Fale Conosco + canais do rodapé).
 - Revisão jurídica interna/compliance do texto antes de produção.
 - Atualizar `DOCUMENTATION.md` na raiz do repo se quiser manter paridade com a wiki Obsidian.
-- Após [[ADR-001 Separacao do painel CMS em site-lsp-admin|ADR-001]]: política continua válida no site público; admin permanece com cookies de sessão fora do escopo do visitante.
+- Com o **monólito** atual ([[Modelo de Deploy]]), a política cobre o visitante do site público; cookies de sessão do admin permanecem fora desse escopo.
 
 ## Relacionado
 
 - [[Visão Geral]] · [[Site Público]] · [[APIs e Integrações]] · [[Autenticação e Segurança#Retenção de dados]]
 - Repositório: `C:\Estudos\site-lsp`
 - Documentação técnica: `DOCUMENTATION.md` (analytics, cookies admin, retenção)
-- [[ADR-001 Separacao do painel CMS em site-lsp-admin]]
+- [[Modelo de Deploy]]
 
 ## Referência rápida — arquivos tocados
 
