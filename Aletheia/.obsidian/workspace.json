@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/site-lsp/Visão Geral.md",
+                "file": "Projetos/xml-reader/xml-reader.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visão Geral"
+              "title": "xml-reader"
             }
           }
         ]
@@ -198,6 +198,7 @@
   },
   "active": "7305429b8d10f234",
   "lastOpenFiles": [
+    "Projetos/site-lsp/Visão Geral.md",
     "Projetos/site-lsp/2026-09-16 Politica de Privacidade LGPD.md",
     "Projetos/site-lsp/APIs e Integrações.md",
     "Projetos/site-lsp/ADR-001 Separacao do painel CMS em site-lsp-admin.md",
@@ -209,7 +210,6 @@
     "Projetos/site-lsp/Runbook.md",
     "Projetos/site-lsp/Site Público.md",
     "Projetos/site-lsp/Testes.md",
-    "Projetos/site-lsp/Visão Geral.md",
     "Projetos/monitores/UI Desktop - Padrão Apex Clients.md",
     "Projetos/monitor-tasy/Visao Geral.md",
     "Projetos/monitor-tasy",
