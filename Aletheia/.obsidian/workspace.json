@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projetos/xml-reader/xml-reader.md",
+                "file": "Projetos/report-mailer/Regras de Negocio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "xml-reader"
+              "title": "Regras de Negocio"
             }
           }
         ]
@@ -198,6 +198,12 @@
   },
   "active": "7305429b8d10f234",
   "lastOpenFiles": [
+    "Projetos/report-mailer/Runbook.md",
+    "Projetos/report-mailer/Visao Geral.md",
+    "Projetos/report-mailer/Regras de Negocio.md",
+    "Projetos/xml-reader/xml-reader - Fluxo de negócio.md",
+    "Projetos/xml-reader/xml-reader - Documentação técnica.md",
+    "Projetos/xml-reader/xml-reader.md",
     "Projetos/site-lsp/Visão Geral.md",
     "Projetos/site-lsp/2026-09-16 Politica de Privacidade LGPD.md",
     "Projetos/site-lsp/APIs e Integrações.md",
@@ -220,12 +226,6 @@
     "Projetos/apex/Regras de Negocio.md",
     "Projetos/monitor-socor",
     "Projetos/monitor-hp/Regras de Negocio.md",
-    "Projetos/monitor-hp/Historico de Desenvolvimento.md",
-    "Projetos/apex/API - Autenticacao.md",
-    "Projetos/apex/API - Visao Geral.md",
-    "Projetos/apex/Historico de Desenvolvimento.md",
-    "Projetos/apex/API - Modelos e Enums.md",
-    "Projetos/apex/Runbook.md",
     "Projetos/apex",
     "Sem título.base",
     "Projetos/xml-reader",
